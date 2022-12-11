@@ -1,5 +1,8 @@
-# Browserless Starter-pack
-This simple starter-pack gets you up and running with all the code you used in the debugger. Just install and run!
+Runs slotmachine demo games (to capture for offline replay). The puppeteer docker required for this:
+
+docker run -e "PREBOOT_CHROME=true" -e "KEEP_ALIVE=true" -e "TOKEN=2cbc5771-38f2-4dcf-8774-50ad51a971bd" -e "MAX_CONCURRENT_SESSIONS=10" -e "DEFAULT_BLOCK_ADS=true"  -e "DEFAULT_IGNORE_HTTPS_ERRORS=true" -e FUNCTION_ENABLE_INCOGNITO_MODE=true  -e "CONNECTION_TIMEOUT=-1" -e "DEFAULT_LAUNCH_ARGS=[\"--window-size=968,1280\"]" -e "DEBUG=-*" -p 24055:3000 --restart always -d browserless/chrome
+
+
 
 ## Requirements
 - NodeJS (version 12 or higher).
