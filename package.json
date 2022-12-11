@@ -1,0 +1,11 @@
+{
+  "name": "browserless-export",
+  "description": "Exported package from browserless, ready to go!",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "puppeteer-core": "8.0.0"
+  }
+}
